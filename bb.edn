@@ -3,5 +3,9 @@
               :task (shell "clj -M:run")}
          dev {:doc "Runs the server in the repl"
               :task (shell "clj -M:dev")}
+         css {:doc "Process css"
+              :task (do
+                      (shell "mkdir -p target/resources/public/css")
+                      (shell "cp -rf node_modules/bulma/css/bulma.min.css target/resources/public/css/"))}
          cljs {:doc "Shadow-cljs watch mode"
                :task (shell "npx shadow-cljs watch app")}}}
