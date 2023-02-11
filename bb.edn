@@ -1,0 +1,7 @@
+{:tasks {:requires ()
+         run {:doc "Runs the server"
+              :task (shell "clj -M:run")}
+         dev {:doc "Runs the server in the repl"
+              :task (shell "clj -M:dev")}
+         cljs {:doc "Shadow-cljs watch mode"
+               :task (shell "npx shadow-cljs watch app")}}}

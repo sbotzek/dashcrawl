@@ -1,0 +1,4 @@
+{:server/repl {:port #long #or [#env REPL_PORT 8001]
+               :bind #or [#env REPL_BIND "127.0.0.1"]}
+ :server/http {:port #long #or [#env HTTP_PORT 8000]
+               :host #or [#env HTTP_HOST "0.0.0.0"]}}
