@@ -10,8 +10,8 @@
         ring-webjars/ring-webjars {:mvn/version "0.2.0"}
         metosin/reitit {:mvn/version "0.5.18"}}
  :aliases {:dev {:extra-deps {integrant/repl {:mvn/version "0.3.2"}}
-                 :extra-paths ["env/dev/src" "env/dev/resources" "target/cljs"]
+                 :extra-paths ["env/dev/src" "env/dev/resources" "target/resources"]
                  :main-opts []}
            :run {:extra-deps {integrant/repl {:mvn/version "0.3.2"}}
-                 :extra-paths ["env/dev/src" "env/dev/resources" "target/cljs"]
+                 :extra-paths ["env/dev/src" "env/dev/resources" "target/resources"]
                  :main-opts ["-m" "dashcrawl.server"]}}}
